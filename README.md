@@ -1,52 +1,47 @@
 # Hi, I'm Pranav Sagar 👋
-### Full-Stack AI Engineer • Real-Time Multimodal Systems • Embodied AI & Robotics
+### Full-Stack AI & Real-Time Systems Engineer | Robotics & Embodied AI
 
-I engineer low-latency backend pipelines, real-time WebRTC voice/video agents, and computer vision telemetry systems that bridge cloud LLMs with physical and web interfaces.
-
-- 🏆 **1st Place Winner** — 20th ISTE Karnataka State Level Robotics Competition (Real-Time WebRTC Voice-to-Action AI Pipeline)
-- 🎓 **B.E. in Robotics Engineering** @ M.S. Ramaiah University of Applied Sciences (**9.20 / 10.0 Cumulative Average**, **10.0 / 10.0** in 8th Sem)
-- 🚀 **Team Lead** — ISRO URSC Robotics Challenge & IIT Bombay e-Yantra
-- ⚡ **AI-Native Engineering Workflow:** Shipping production FastAPI + React + pgvector architectures at high velocity using **Cursor, Antigravity CLI, Gemini CLI, and Codex**.
-
----
-
-## 🎥 Live Engineering Demos & Featured Architectures
-
-### 1. 🎙️ Real-Time Multimodal WebRTC Voice-to-Action AI Pipeline *(1st Place — ISTE State Competition)*
-> **[🔗 Watch 45-Sec Live Demo Video](#)** | **[📂 View Repository](#)**
-- **Architecture:** `FastAPI` • `WebRTC` • `Python (asyncio)` • `C-Python Bindings` • `Raspberry Pi` • `PCA9685`
-- Built a bi-directional, sub-second audio/video streaming pipeline that connects multimodal LLM voice agents directly to physical hardware actuators as callable agent tools.
-
-### 2. 🖐️ Scale-Invariant 3D Hand-Kinematics & Teleoperation API
-> **[🔗 Watch 45-Sec Live Demo Video](#)** | **[📂 View Repository](#)**
-- **Architecture:** `FastAPI` • `MediaPipe` • `OpenCV` • `Vector Trigonometry`
-- Formulated a translation- and depth-invariant geometric solver using the **Law of Cosines** ($\theta = \arccos((a^2 + b^2 - c^2) / 2ab)$) across 3D phalangeal landmarks to stream real-time finger flexion angles over an asynchronous FastAPI telemetry endpoint.
-
-### 3. 🧠 High-Dimensional Semantic Vector Search Engine (Movie Vibe Matcher)
-> **[🔗 Live App / Demo](#)** | **[📂 View Repository](#)**
-- **Architecture:** `FastAPI` • `React 19` • `Google GenAI SDK (gemini-embedding-2)` • `Supabase (pgvector)` • `httpx`
-- Encodes multi-layered user preferences into **3072-dimensional vector embeddings**, executing low-latency cosine similarity queries via custom PostgreSQL RPC functions and non-blocking `httpx` connection pools.
-
-### 4. 🤖 Closed-Loop RL Autonomous Navigation & IR Telemetry
-> **[📂 View Repository](#)**
-- **Architecture:** `CoppeliaSim` • `Reinforcement Learning` • `Python` • `Real-Time Sensor Fusion`
-- Trained a closed-loop navigation policy utilizing simulated multi-sensor infrared (IR) reflectance streams to predict trajectory deviation and dynamically adjust motor control loops.
+I build **agentic AI governance platforms, low-latency multimodal WebRTC pipelines, asynchronous FastAPI backends, and real-time hardware control systems**.
+- 🏆 **1st Place Winner** @ 20th ISTE Karnataka State Robotics Competition
+- 🎓 **B.E. in Robotics Engineering** @ M.S. Ramaiah University of Applied Sciences (9.20/10.0 Cumulative Avg | 10.0/10.0 8th Sem)
+- 🎤 **Invited Chief Guest & Speaker** @ Dayananda Sagar University (Robotics & AI Dept)
+- ⚡ **AI-Native Workflow:** Shipping production systems at high velocity using Python, FastAPI, React, Docker, `uv`, and agentic CLI/IDE tooling (Cursor, Antigravity, Gemini CLI, Codex).
 
 ---
 
-## 🛠️ Technical Stack
+### 🚀 Featured Engineering Builds
 
-| Domain | Technologies |
-| :--- | :--- |
-| **Languages & Core** | Python, JavaScript (ES6+), SQL, C-Python Hardware Bindings, `asyncio`, `httpx` |
-| **AI, Agents & Vision** | LangGraph, LangChain, Google GenAI SDK, Hugging Face, Reinforcement Learning, MediaPipe, OpenCV, Neo4j (Knowledge Graphs), MCP |
-| **Backend & Real-Time** | FastAPI, WebRTC, REST APIs, SQLAlchemy, Pydantic, Express.js, JWT |
-| **Frontend, Data & Cloud** | React.js 19, Tailwind CSS, PostgreSQL (`pgvector`), Supabase, MongoDB, Docker, Google Cloud Run, CI/CD |
-| **Simulation & AI Dev Tools** | CoppeliaSim, NVIDIA Isaac Sim, Cursor, Antigravity CLI, Gemini CLI, Codex |
+#### 1. 🛡️ AI Runtime Controller — Full-Stack Agentic Governance Platform
+- **Stack:** `React` `Vite` `Tailwind CSS` `FastAPI` `Google GenAI SDK` `Docker Compose` `uv`
+- Full-stack LLM runtime policy engine with Human-in-the-Loop (HITL) tool-call interception (Tavily Search, live SMTP email dispatch), a 0ms emergency kill switch, and millisecond-level security audit logs.
+- 🔗 **[View Repository](https://github.com/Pranav-cmyk/agent-runtime-controller)**
+
+#### 2. 🦾 Dobot AI-Based Robotics Control Suite (Gesture & Voice)
+- **Stack:** `Python` `MediaPipe` `LiveKit` `Google Gemini` `Pydobot`
+- Interactive robotics control suite built for live academic demonstrations at Dayananda Sagar University, featuring real-time MediaPipe hand-tracking gesture control and LiveKit/Gemini natural-language voice interfaces for the Dobot Magician arm.
+- 🔗 **[View Repository](https://github.com/Pranav-cmyk/AI-Based-Robotics-Projects)**
+
+#### 3. 🎙️ Distributed LiveKit Multimodal Robotic Arm & Voice Agent *(ISTE 1st Place & Capstone)*
+- **Stack:** `LiveKit` `WebRTC` `FastAPI` `Python` `Raspberry Pi 5 & 4` `PCA9685`
+- Dual-node distributed robotics architecture linking an RPi 4 hardware joystick node to an RPi 5 controller running a real-time LiveKit WebRTC voice & cross-device camera agent with autonomous tool calling.
+- 🔗 **[RPi 5 Controller Repo](https://github.com/Pranav-cmyk/livekit-robotic-arm-controller)** | **[RPi 4 Teleop Repo](https://github.com/Pranav-cmyk/rpi-joystick-teleop-node)**
+
+#### 4. 📷 Industrial Machine Vision Real-Time Camera Streaming API
+- **Stack:** `FastAPI` `OpenCV` `NumPy` `Multithreading` `Hikrobot MVS SDK` `Python`
+- Stateful `CameraManager` service wrapping industrial GigE/USB machine vision cameras (`MvCameraControl`) into a non-blocking daemon thread with mutex locks (`threading.Lock`) and FastAPI lifespan management.
+- 🔗 **[View Repository](https://github.com/Pranav-cmyk/mvs-industrial-camera-streamer)**
+
+#### 5. ☁️ Containerized Task Management & RBAC Platform
+- **Stack:** `FastAPI` `SQLAlchemy` `Alembic` `Docker` `JWT` `PostgreSQL/SQLite`
+- Production-grade web backend featuring stateless JWT auth (`bcrypt`), Role-Based Access Control (RBAC), Alembic schema migrations, and Docker Compose orchestration.
+- 🔗 **[View Repository](https://github.com/Pranav-cmyk/fastapi-rbac-task-platform)**
 
 ---
 
-## 📫 Let's Build Together
-- **LinkedIn:** [linkedin.com/in/pranav-sagar-fsd](https://www.linkedin.com/in/pranav-sagar-fsd)
-- **Email:** [pranavsagar529@gmail.com](mailto:pranavsagar529@gmail.com)
-- **Location:** Bengaluru, India (Open to Global Remote & High-Growth Bengaluru Roles)
+### 🛠️ Tech Stack & Tooling
+- **Languages & Core:** Python, C, JavaScript (ES6+), SQL, Bash, `asyncio`, Multithreading (`threading.Lock`)
+- **Backend & Real-Time:** FastAPI, LiveKit, WebRTC, WebSockets, SQLAlchemy, Alembic, Pydantic, REST APIs
+- **AI, Vision & Robotics:** Google GenAI SDK, LangGraph, MediaPipe, OpenCV, Dobot Magician, MVS SDK, CoppeliaSim, NVIDIA Isaac Sim
+- **Frontend & Cloud:** React 19, Vite, Tailwind CSS, PostgreSQL, Supabase, Docker, `uv`, Linux
+
+📫 **Reach me:** [LinkedIn](https://www.linkedin.com/in/pranav-sagar-fsd) | `pranavsagar529@gmail.com`
